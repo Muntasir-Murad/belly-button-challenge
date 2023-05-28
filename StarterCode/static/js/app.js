@@ -100,7 +100,7 @@ function barChart(sample) {
         // Log the data to the console
         console.log(otuIds,otuLabels,sampleValues);
 
-        // Set top ten items to display in descending order
+       
         let yticks = otuIds.slice(0,10).map(id => `OTU ${id}`).reverse();
         let xticks = sampleValues.slice(0,10).reverse();
         let labels = otuLabels.slice(0,10).reverse();
@@ -124,7 +124,7 @@ function barChart(sample) {
     });
 };
 
-// Function that builds the bubble chart
+// Function  for bubble chart
 function BubbleChart(sample) {
 
     // Use D3 to retrieve all of the data
