@@ -38,8 +38,8 @@ function init() {
    
         metaData(sample_one);
         barChart(sample_one);
-        buildBubbleChart(sample_one);
-        buildGaugeChart(sample_one);
+        BubbleChart(sample_one);
+       
 
     });
 };
@@ -125,7 +125,7 @@ function barChart(sample) {
 };
 
 // Function that builds the bubble chart
-function buildBubbleChart(sample) {
+function BubbleChart(sample) {
 
     // Use D3 to retrieve all of the data
     d3.json(dataURL).then((data) => {
@@ -181,8 +181,8 @@ function optionChanged(value) {
     // Call all functions 
     metaData(value);
     barChart(value);
-    buildBubbleChart(value);
-    buildGaugeChart(value);
+    BubbleChart(value);
+   
 };
 
 // Call the initialize function
